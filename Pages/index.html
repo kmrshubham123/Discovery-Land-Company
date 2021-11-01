@@ -5,66 +5,403 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="..\Assets\favicon-16x16.png" >
+    <link rel="icon" href="..\Assets\favicon-16x16.png">
     <link rel="StyleSheet" href="..\CSS\index.css">
+    <link rel="StyleSheet" href="..\CSS\indexSection2.css">
+    <link rel="StyleSheet" href="..\CSS\globe.css">
+    <link rel="StyleSheet" href="..\CSS\indexSection3.css">
+    <link rel="StyleSheet" href="..\CSS\footer.css">
+    <script defer src="..\JavaScript\ourworlds.js"></script>     
     <title>Discovery Land Company</title>
+  
 </head>
 
 <body>
+    
     <div class="section1">
         <video autoplay muted loop class="background-video">
             <source src="..\Assets\Video\DLC-Web-V.mov.mp4" type="">
         </video>
         <div class="nav-bar">
-            <div class="header-logo"  >
+            <div class="header-logo">
                 <img src="..\Assets\logo1.svg" alt="logo">
             </div>
             <nav class="nav-class">
                 <ul class="nav-items" id="header">
-                    <li class="nav-link"><a href="#"">About DLC</a></li>
+                    <li class="nav-link"><a href="#">About DLC</a></li>
                     <li class=" nav-link"><a href="\Pages\OurWorlds.html">Our Worlds</a></li>
-                    <li class="nav-link"><a href="#">Experiences</a></li>
+                    <li class="nav-link"><a href="../Pages/Experiences.html">Experiences</a></li>
                     <li class="nav-link"><a href="\Pages\Gallery.html">Gallery</a></li>
-                    <li class="nav-link"><a href="#"">Press</a></li>
+                    <li class="nav-link"><a href="#">Press</a></li>
+                    <span style="font-size:30px;cursor:pointer;float: right;color: white; " class="openmenu"
+                        onclick="openNav()">&#9776;</span>
                 </ul>
-          
+
             </nav>
+            <div id=" mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Magazine</a>
+                <a href="#">Company</a>
+                <a href="#">Foundation</a>
+                <a href=" #">Careers</a>
+                <a href="#">Conatct</a>
+            </div>
+
+        </div>
+        <div class=" text">
+            <h>Discover<br>Your World</h>
+        </div>
+
+        <!-- animation-text -->
+        <div class="Change-text">
+            <div></div>
+        </div>
+
+        <!-- Scroll to Explore-&-(Round-Arrow) -->
+        <div class="scroll">Scroll to explore
+            <div class="arrow-btn-sec1">
+                <marquee direction="down" class="arrow-sec1">&#8595;</marquee>
+            </div>
+        </div>
+
     </div>
-    <div class=" text">
-                            <h>Discover<br>Your World</h>
+
+
+
+
+
+
+
+
+
+
+    <div class="section2">
+        <div class="image-container">
+            <div class="text-image">
+                <div class="text1">Welcome to </div>
+                <div class="text2">our world</div>
+                <p class="paragraph">
+                    Discover the unique atmosphere of our private residential club communities. Once
+                    experienced. Never forgotten. This is classic, comfortable, modern living in nature’s
+                    most spectacular settings worldwide. Reassuringly exclusive. Generously welcoming. Find your unique
+                    world – a place where families love to becreating unforgettable moments, together.
+                </p>
+                <div class="image-man">
+                    <img src="..\Assets\index\S2.2.man.jpg" alt="man-image" class="man-img">
+                </div>
+            </div>
+            <img class="ocean" src="..\Assets\index\S2.1.Explore.jpg" alt="">
+        </div>
     </div>
+
+
+    <!-- Explore world with two buttons -->
+    <div class="explore-slider">
+        <div class="text-lines">
+            <h>Explore<br>our worlds</h>
+        </div>
+        <div class="slider-button">
+            <a href="#" class="previous round">&#8592;</a>
+            <a href="#" class="next round">&#8594;</a>
+        </div>
+    </div>
+    <div class="slider">
+        <ul class="slider-images">
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\Bakers_Marina.jpg" alt="image1" class="slide-image">
+                <div class="bottom-left">Baker's Bay</div>
+                <div class="bottom-leftdown">Great Guana Cay, Bahamas</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\c.jpg" alt="image2" class="slide-image">
+                <div class="bottom-left">Costa Terra</div>
+                <div class="bottom-leftdown">Comporta, portugal</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\chileno-carousel.jpg" alt="image3" class="slide-image">
+                <div class="bottom-left">Chileno Bay</div>
+                <div class="bottom-leftdown">Cabo San Lusas, Mexico</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\CordeValle.jpg" alt="image5" class="slide-image">
+                <div class="bottom-left">CordeValle</div>
+                <div class="bottom-leftdown">Silicon Valley, California</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\driftwood-1.jpg" alt="image6" class="slide-image">
+                <div class="bottom-left">DriftWood</div>
+                <div class="bottom-leftdown">Austin, Texas</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\Dune_deck.jpg" alt="image7" class="slide-image">
+                <div class="bottom-left">Dune Deck</div>
+                <div class="bottom-leftdown">Westhampton Beach, New York</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\ElDorado.jpg" alt="image8" class="slide-image">
+                <div class="bottom-left">El Dorado</div>
+                <div class="bottom-leftdown">Los Cabos, Mexico</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\Estancia_sized-vert.jpg" alt="image9" class="slide-image">
+                <div class="bottom-left">Estancia</div>
+                <div class="bottom-leftdown">Scottsdale, Arizona</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\GozzerRanch.jpg" alt="image3" class="slide-image">
+                <div class="bottom-left">Gozzer Ranch</div>
+                <div class="bottom-leftdown">Coeur d'Alene, Idaho</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\Grande-carouselPalaya.jpg" alt="image5" class="slide-image">
+                <div class="bottom-left">Palaya Grande</div>
+                <div class="bottom-leftdown">Rio San Juan, Dominicab Republic</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\HideWay.jpg" alt="image6" class="slide-image">
+                <div class="bottom-left">HideWay</div>
+                <div class="bottom-leftdown">La Quinta, California</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\ironhorse.jpg" alt="image1" class="slide-image">
+                <div class="bottom-left">Ironhorse</div>
+                <div class="bottom-leftdown">Whitefish, Montana</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\iStock.jpg" alt="image2" class="slide-image">
+                <div class="bottom-left">Bakers Marina</div>
+                <div class="bottom-leftdown">Bakers Marina</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\james.jpg" alt="image3" class="slide-image">
+                <div class="bottom-left">James Island</div>
+                <div class="bottom-leftdown">South Gulf Island, British Columbia,canada</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\Kukio.jpg" alt="image5" class="slide-image">
+                <div class="bottom-left">Kukio</div>
+                <div class="bottom-leftdown">Kohala, Hawaii</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\Madison.jpg" alt="image6" class="slide-image">
+                <div class="bottom-left">Madison</div>
+                <div class="bottom-leftdown">La Quinta, California</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\Makena.jpeg" alt="image1" class="slide-image">
+                <div class="bottom-left">Makena</div>
+                <div class="bottom-leftdown">Maui, Hawaii</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\mirabel.jpg" alt="image2" class="slide-image">
+                <div class="bottom-left">Mirabel</div>
+                <div class="bottom-leftdown">Scottsdale, Arizona</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\MOUNTAINTOP.jpg" alt="image3" class="slide-image">
+                <div class="bottom-left">Mountaintop</div>
+                <div class="bottom-leftdown">Cashier, North Carolina</div>
+            </div>
+            <div class="img-text">
+                <img src="..\Assets\index\LandsofDiscovery\Silo_Andy.jpg" alt="image5" class="slide-image">
+                <div class="bottom-left">Silo Ridge</div>
+                <div class="bottom-leftdown">Amenia, New York</div>
+            </div>
+        </ul>
+    </div>
+
+
+    <!-- Lands of Discover-Globe and carousel -->
+
+
+    <div class="globe-section">
+        <div class="globe">
+            <h1 class="globe-head">Lands Of<br>Discovery</h1>
+            <p class="globe-para">A World Away From Day To Day.Your Escape.Your Heaven.Your World.
+            <p class="globe-para2">Explore The Map Below And Take A Journey Tour Communities.</p>
+            </p>
+            <div class="globe-items">
+                <div class="globe-link">NorthAmerica & Caribbean</div>
+                <div class="globe-link">Hawaii</div>
+                <div class="globe-link">Europe</div>
+            </div>
+        </div>
+        <div class="globe-image">
+            <img src="..\Assets\index\globe\globe-usa.jpg" alt="globe-image">
+        </div>
+
+
+        <!-- Black-box -->
+
+        <div class="black-box">
+            <div class="arrow-buttons">
+                <button class="arrow arrow-right arrow-prev" onclick="prev()">
+                    <i class="bi bi-arrow-left"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="white"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                </button>
+                <button class="arrow arrow-next" onclick="next()">
+                    <i class="bi bi-arrow-right"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="white"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="sun-wind-path">
+                <div class="sun">
+                    <i class="bi bi-sun"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="white" class="bi bi-sun"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                    </svg>
+                    <h3 class="weather-txt">81<sup>o</sup></h3>
+                </div>
+                <div class="wind">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="white" class="bi bi-wind"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <h3 class="weather-txt">18.55mph</h3>
+                </div>
+                <div class="path">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="white"
+                        class="bi bi-compass" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                        <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+                    </svg>
+                    <h3 class="weather-txt">217<sup>o</sup></h3>
+                </div>
+            </div>
+            <div class="address">
+                <h5 class="address-text" id="sub-text">
+                    Great Guana Cay
+                </h5>
+            </div>
+            <div class="main-address">
+                <h2 class="main-address-text" id="main-text">Baker's Bay</h2>
+            </div>
+            <div class="coordinates">
+                <h2 class="coordinates-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" fill="white"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    17.3180<sup>o</sup>N / 69.0754<sup>o</sup>W
+                </h2>
+            </div>
+
+
+        </div>
+        <div class="black-box-image">
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="..\Assets\index\weatherCarousel\BakersBayArial.jpg" alt=""
+                            style="width:100%; height: 150%;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- three cards at end of page -->
+    <div class="section3">
+        <div class="cards">
+            <div class="exp-box">
+                <div><img class="image" src="..\Assets\index\S3.1experience.jpg" alt=""></div>
+                <div class="title-button">
+                    <h3 class="title">Experiences </h3>
+                    <div class="arrow-btn">
+                        <span class="arrow">&#8594;</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="exp-box">
+                <div><img class="image" src="..\Assets\index\S3.2lifestyle.jpg" alt=""></div>
+                <div class="title-button">
+                    <h3 class="title">LifeStyle </h3>
+                    <div class="arrow-btn">
+                        <span class="arrow">&#8594;</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="exp-box">
+                <div><img class="image" src="..\Assets\index\S3.3wellnes.jpg" alt=""></div>
+                <div class="title-button">
+                    <h3 class="title">Wellness </h3>
+                    <div class="arrow-btn">
+                        <span class="arrow">&#8594;</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer-container">
+        <div class="footer-item-logo">
+            <div class="footer-items" id="footer-logo">
+                <img src="..\Assets\FooterIcon.svg " alt="">
+            </div>
+
+            <div class="footer-items" id="footer-links">
+                <div class="links" id="column1">
+                    <div class="contact-info" style="opacity: 0.5; font-size: small;">GET IN TOUCH</div>
+                    <div class="contact-info">(480) 624-5200</div>
+                    <div class="contact-info">mail@discoverylandco.com</div>
+                </div>
+                <div class="links">
+                    <div class="link">About DLC</div>
+                    <div class="link">Our Worlds</div>
+                    <div class="link">Experiences</div>
+                    <div class="link">Gallery</div>
+                    <div class="link">Press</div>
+                </div>
+                <div class="links">
+                    <div class="page">Magazine</div>
+                    <div class="page">Careers</div>
+                    <div class="page">Foundation</div>
+                    <div class="page">Company</div>
+                    <div class="page">Contact</div>
+                    <div class="page">Privacy</div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; Discovery Land Company. All rights reserved.</div>
+    </div>
+
 
 </body>
 
 
-<div class="footer-container">
-    <div class="footer-item-logo">
-        <div class="footer-items" id="footer-logo"><img src="..\Assets\FooterIcon.svg " alt=""></div>
-
-        <div class="footer-items" id="footer-links">
-            <div class="links" id="column1">
-                <div class="contact-info" style="opacity: 0.5; font-size: small;">GET IN TOUCH</div>
-                <div class="contact-info">(480) 624-5200</div>
-                <div class="contact-info">mail@discoverylandco.com</div>
-            </div>
-            <div class="links">
-                <div class="link">About DLC</div>
-                <div class="link">Our Worlds</div>
-                <div class="link">Experiences</div>
-                <div class="link">Gallery</div>
-                <div class="link">Press</div>
-            </div>
-            <div class="links">
-                <div class="page">Magazine</div>
-                <div class="page">Careers</div>
-                <div class="page">Foundation</div>
-                <div class="page">Company</div>
-                <div class="page">Contact</div>
-                <div class="page">Privacy</div>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">&copy; Discovery Land Campany. All rights reserved.</div>
-</div>
 
 </html>

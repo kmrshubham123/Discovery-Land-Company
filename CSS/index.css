@@ -1,6 +1,10 @@
-body,html {
-    height: 100vh;
-    margin: 0;
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .section1{
@@ -28,7 +32,9 @@ a{
     font-size: 14px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
-
+.openmenu{
+    margin-left: 1cm;
+}
 .nav-bar{
     position: relative;
     bottom:95%;
@@ -38,6 +44,7 @@ a{
 .nav-items {    
     display: flex;
     flex-direction: row;   
+   
 }
 .nav-link {
     color: white;
@@ -46,63 +53,133 @@ a{
     margin: 10px;
 
 }
+
+.Change-text{
+    width: 30%;
+    color: white;
+    position: relative;
+    display:flex;
+    display:grid;
+    margin-left: 13.35%;
+    font-size: 20px;
+    bottom: 65%;
+}
+.Change-text div:after{
+    content: 'Bakers Bay';
+    animation: text 40s infinite;
+}
+
+@keyframes text {
+    10%{
+        content: 'North Shore Preserve';
+    }
+    20%{
+        content: 'James Island';
+    }
+    30%{
+        content: 'Costaterra';
+    }
+    40%{
+        content: 'Barbuda Ocean Club';
+    }
+    50%{
+        content: 'Driftwood';
+    }
+    60%{
+        content: 'Troubadour';
+    }
+    70%{
+        content: 'Playa Grande';
+    }
+    80%{
+        content: 'Chileno Bay';
+    }
+    90%{
+        content: 'The Summit';
+    }
+    100%{
+        content: 'Dune Deck';
+    }
+
+}
+
+
+
 .text {
     width: 70%;
     margin-left: 20%;
-
     color: white;
     font-size: 75px;
     position: relative;
     bottom: 70%;
     font-family: 'Times New Roman', Times, serif;
 }
-/* Css for footer part */
-
-.footer-container {
-    background-color: #161F1E;
-    display: flex;
-    flex-direction: column;
+.scroll{
+    width: 100%;
     color: white;
-    width: 100vw;
-    height: 70vh;
-    justify-content: space-around;
-}
-
-.footer-item-logo {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 8%;
-    /* border: 1px red solid; */
-}
-
-.footer-items {
-    display: flex;
-}
-
-#footer-logo {
-    height: 20%;
-    width: 20%;
-}
-
-#footer-links {
-    display: flex;
-    justify-content: space-around;
-    /* border: 2px solid white; */
-    width: 60%;
-}
-
-.links {
-    margin-bottom: 50px;
-}
-
-.contact-info, .link, .page {
-    margin-bottom: 10px;
-}
-
-.copyright {
-    opacity: 0.5;
-    width: 50%;
+    font-size: 13px;
     position: relative;
-    left: 9%;
-    bottom: 10%;
+    bottom: 63%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-around;
+    right: 0cm;
+}
+.arrow-btn-sec1{
+   bottom: 60%;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    height:60px;
+    width:60px;
+    font-size: 2rem;
+    margin-left: 35%;
+    
+}
+.arrow-sec1{
+    margin-left: 36%;
+}
+/*mysidena sidenav*/
+  
+.sidenav {
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: #f1f1f1;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
